@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Vyom Dubey</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" </a>
+            <div class="NavBar" id="NavBar">
+                <i class="fa fa-xmark-large" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact Me</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Welcome</h1>
+        </div>
+    </section>
+
+<script>
+    var Navlinks=document.getElementById("NavBar");
+    function showMenu(){
+        Navlinks.style.right="0";
+    }
+    function hideMenu(){
+        Navlinks.style.right="-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
